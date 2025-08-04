@@ -36,7 +36,8 @@ const LandingPage = () => {
                 variant="outline" 
                 size="sm"
                 onClick={() => setShowLoginModal(true)}
-                className="border-blue-600 text-blue-600 hover:bg-blue-50"
+                className="border-blue-600 text-blue-600 hover:bg-blue-50 hover:text-blue-700 hover:border-blue-700 px-8 py-3 text-lg"
+                 
               >
                 Login
               </Button>
@@ -264,7 +265,7 @@ const LandingPage = () => {
                 <Button 
                   size="lg" 
                   variant="outline" 
-                  className="border-blue-600 text-blue-600 hover:bg-blue-50 px-8 py-3 text-lg"
+                   className="border-blue-600 text-blue-600 hover:bg-blue-50 hover:text-blue-700 hover:border-blue-700 px-8 py-3 text-lg"
                   onClick={() => setShowLoginModal(true)}
                 >
                   Watch Demo
@@ -480,8 +481,8 @@ const LandingPage = () => {
                 </span>
               </div>
               <div className="text-center mb-8">
-                <h3 className="text-2xl font-bold text-gray-900 mb-2">Pro</h3>
-                <div className="text-4xl font-bold text-gray-900 mb-2">$29</div>
+                <h3 className="text-2xl font-bold text-gray-900 mb-2">Basic</h3>
+                <div className="text-4xl font-bold text-gray-900 mb-2">$5</div>
                 <p className="text-gray-600">per month</p>
               </div>
               <ul className="space-y-4 mb-8">
@@ -514,8 +515,8 @@ const LandingPage = () => {
             {/* Enterprise Tier */}
             <div className="bg-white rounded-xl p-8 shadow-sm border border-gray-200">
               <div className="text-center mb-8">
-                <h3 className="text-2xl font-bold text-gray-900 mb-2">Enterprise</h3>
-                <div className="text-4xl font-bold text-gray-900 mb-2">Custom</div>
+                <h3 className="text-2xl font-bold text-gray-900 mb-2">Pro</h3>
+                <div className="text-4xl font-bold text-gray-900 mb-2">$10</div>
                 <p className="text-gray-600">For teams and organizations</p>
               </div>
               <ul className="space-y-4 mb-8">
@@ -630,14 +631,14 @@ const LandingPage = () => {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-blue-600">
+ {/* CTA Section */}
+      <section className="py-12 px-4 sm:px-6 lg:px-8 bg-blue-600">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl font-bold text-white mb-6">
+          <h2 className="text-3xl font-bold text-white mb-4">
             Ready to Ace Your Next Interview?
           </h2>
-          <p className="text-xl text-blue-100 mb-8">
-            Join thousands of professionals who have improved their interview skills with InterviewAI.
+          <p className="text-lg text-blue-100 mb-6">
+            Join thousands of professionals who have improved their interview skills with PrepView.
           </p>
           <Button 
             size="lg" 
@@ -649,57 +650,8 @@ const LandingPage = () => {
           </Button>
         </div>
       </section>
-
-      {/* Footer */}
-      <footer className="bg-gray-900 text-white py-12 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto">
-          <div className="grid md:grid-cols-4 gap-8">
-            <div>
-              <h3 className="text-2xl font-bold text-blue-400 mb-4">PrepView</h3>
-              <p className="text-gray-400">
-                The AI-powered platform that helps you nail your next interview.
-              </p>
-            </div>
-            
-            <div>
-              <h4 className="font-semibold mb-4">Product</h4>
-              <ul className="space-y-2 text-gray-400">
-                <li><a href="#" className="hover:text-white transition-colors">Features</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Pricing</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">How it Works</a></li>
-              </ul>
-            </div>
-            
-            <div>
-              <h4 className="font-semibold mb-4">Company</h4>
-              <ul className="space-y-2 text-gray-400">
-                <li><a href="#" className="hover:text-white transition-colors">About</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Contact</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Careers</a></li>
-              </ul>
-            </div>
-            
-            <div>
-              <h4 className="font-semibold mb-4">Connect</h4>
-              <div className="flex space-x-4">
-                <a href="#" className="text-gray-400 hover:text-white transition-colors">
-                  <span className="text-sm">Email</span>
-                </a>
-                <a href="#" className="text-gray-400 hover:text-white transition-colors">
-                  <span className="text-sm">Support</span>
-                </a>
-              </div>
-            </div>
-          </div>
-          
-          <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-            <p>&copy; 2025 Prepview. All rights reserved.</p>
-          </div>
-        </div>
-      </footer>
     </div>
   )
 }
 
 export default LandingPage
-
